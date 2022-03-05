@@ -63,7 +63,7 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
-:focus {
+:focus {                                
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
@@ -397,6 +397,7 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    margin: 20px;
 }
 
 .portfolio__img {
@@ -469,6 +470,13 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    
+
+}
+.section__title .section__title--intro{
+    font-family: 'Montserrat';
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
 
 .portfolio-item-individual p {
@@ -481,12 +489,29 @@ header {
     color: var(--clr-light);
 }
 .dark-mode-btn{
+    padding: .7em;
+    width: 3em;
     position: absolute;
-    top: 1.25em;
-    right: 6.5em;
+    top: .1em;
+    right: 4.5em;
     border: 0;
     display: inline-block;
-    
+    border-radius: 1em;
+    position: relative;
+}
+#slider{
+    display: block;
+    background-color: var(--clr-dark);
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 50%;
+position: absolute;
+transform: translate(-10px, -10px);
+transition: transform 200ms ease-in-out;
+}
+.dark-mode #slider{
+   transform:translate(10px, -10px) ;
+   background-color: var(--clr-light);
 }
 
 
