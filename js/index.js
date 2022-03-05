@@ -10,9 +10,7 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
-function dark(){
-    let body = document.querySelector("body")
-    body.setAttribute('class', 'dark-mode')
-    // let light = document.getElementById('light-mode')
-    // light.innerText('Light Mode')
-}
+const darkMode = document.querySelector(".dark-mode-btn")
+darkMode.addEventListener("click" , ()=>{
+    document.body.classList.toggle("dark-mode")
+})
